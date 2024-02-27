@@ -6,7 +6,7 @@ import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { useRouter } from "expo-router";
 
 const index = () => {
-    const router = useRouter();
+  const router = useRouter();
   return (
     <ScrollView>
       <LinearGradient colors={["#7F7FD5", "#E9E4F0"]} style={{ flex: 1 }}>
@@ -34,7 +34,7 @@ const index = () => {
             }}
           >
             <Pressable
-           onPress={() => router.push("/(home)/employees")}
+              onPress={() => router.push("/(home)/employees")}
               style={{
                 backgroundColor: "#D3CCE3",
                 padding: 12,
@@ -54,7 +54,7 @@ const index = () => {
                   justifyContent: "center",
                 }}
               >
-                <Ionicons name="ios-people-sharp" size={24} color="black" />
+                <Ionicons name="people" size={24} color="black" />
               </View>
               <Text style={{ marginTop: 7, fontWeight: "600" }}>
                 Employee List
@@ -81,7 +81,7 @@ const index = () => {
                   justifyContent: "center",
                 }}
               >
-                <Ionicons name="ios-people-sharp" size={24} color="black" />
+                <Ionicons name="people" size={24} color="black" />
               </View>
               <Text style={{ marginTop: 7, fontWeight: "600" }}>
                 Mark Attendance
@@ -144,7 +144,7 @@ const index = () => {
               </View>
             </Pressable>
             <Pressable
-                onPress={() => router.push("/(home)/summary")}
+              onPress={() => router.push("/(home)/summary")}
               style={{
                 backgroundColor: "#BE93C5",
                 borderRadius: 6,
@@ -404,7 +404,7 @@ const index = () => {
               >
                 <Feather name="bar-chart" size={24} color="black" />
               </View>
-              <Text style={{ marginTop: 7 }}>Employee Performance</Text>
+              <Text style={{ marginTop: 7 }}>Performance</Text>
             </View>
           </View>
         </View>
